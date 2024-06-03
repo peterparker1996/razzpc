@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин компьютеров</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="photo/icon.jpg" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+        }
+        .category {
+            margin: 20px 0;
+        }
+        .category h2 {
+            margin: 10px 0;
+        }
+        .highlight {
+            color: red;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 20px;
+            font-size: 21px;
+        }
+        .why-choose-us {
+            text-align: left;
+            margin: 20px;
+            padding: 20px;
+        }
+        .history {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .history img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Интернет-магазин компьютеров</h1>
+    </header>
+    <nav>
+        <a href="inetmagaz.html">Главная</a>
+        <a href="gaming.html">Игровые ПК</a>
+        <a href="education.html">Учебные ПК</a>
+        <a href="graphics.html">Дизайнерские ПК</a>
+        <a href="korzina.html">Корзина</a>
+    </nav>
+    <div class="container">
+        <section class="welcome-section">
+            <h3><b>Добро пожаловать в наш интернет-магазин компьютеров!</b></h3>
+            <p>В современном мире компьютеры стали неотъемлемой частью нашей жизни. Они помогают нам работать, учиться, общаться и развлекаться. В нашем интернет-магазине мы предлагаем широкий ассортимент компьютерной техники для любых задач и потребностей.</p>
+            <h4><b>Почему выбирают нас?</b></h4>
+            <ul style="list-style-type: decimal; padding-left: 20px;">
+                <li><strong>Широкий ассортимент:</strong> У нас вы найдете компьютеры для дома и офиса, игровые системы, мощные рабочие станции для профессионалов и многое другое. Мы предлагаем как готовые решения, так и возможность собрать компьютер на заказ по вашим индивидуальным требованиям.</li>
+                <li><strong>Качество и надежность:</strong> Все представленные у нас товары от проверенных производителей, таких как ASUS, Dell, HP, Lenovo, Apple и других. Мы тщательно отбираем каждый продукт, чтобы вы могли быть уверены в его качестве и долговечности.</li>
+                <li><strong>Профессиональная консультация:</strong> Наша команда экспертов всегда готова помочь вам с выбором. Задайте нам вопрос в чате, по телефону или электронной почте, и мы поможем найти идеальное решение для вас.</li>
+            </ul>    
+        </section>
+        <footer>
+            <p>&copy; 2024 Интернет-магазин компьютеров. Все права защищены.</p>
+        </footer>
+    </div>
+    <script>
+        function toggleHighlight(category) {
+            var element = document.getElementById(category);
+            if (element.classList.contains('highlight')) {
+                element.classList.remove('highlight');
+            } else {
+                element.classList.add('highlight');
+            }
+        }
+    </script>
+</body>
+</html>

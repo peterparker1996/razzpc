@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровые пк</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="photo/icon.jpg" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+            width: calc(33% - 20px);
+            box-sizing: border-box;
+        }
+        .product img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .product-details h3 {
+            margin: 0;
+        }
+        .product-details p {
+            margin: 5px 0;
+        }
+        .price {
+            font-weight: bold;
+            color: #e91e63;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Интернет-магазин компьютеров</h1>
+    </header>
+    <nav>
+        <a href="inetmagaz.html">Главная</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="korzina.html">Корзина</a>
+        <a href="education.html">Учебные ПК</a>
+        <a href="graphics.html">Дизайнерские ПК</a>
+    </nav>
+    <div class="container">
+        <main>
+            <section class="section">
+                <h2>Компьютеры для видеоигр</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="photo/hyperpc-one-upd.jpg" alt="Компьютер 1">
+                        <div class="product-details">
+                            <h3>Игровой компьютер One</h3>
+                            <p>Процессор: Intel® Core™ i5-12400F [до 4.4GHz, 6 ядер]</p>
+                            <p>Видеокарта: Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</p>
+                            <p>Материнская плата: MSI PRO B760M-A [DDR4, Wi-Fi]</p>
+                            <p>Оперативная память: 16GB Kingston FURY Beast RGB [DDR4, 3600MHz, 2x8GB]</p>
+                            <p>SSD накопитель: 500GB ADATA LEGEND 800 [3500MB/s, Gen4]</p>
+                            <p class="price">Цена: 122,800 руб.</p>
+                            <button onclick="addToCart('Игровой компьютер One', 122800)">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="photo/hyperpc-fury-alt.jpg" alt="Компьютер 2">
+                        <div class="product-details">
+                            <h3>Игровой компьютер Fury</h3>
+                            <p>Процессор: Intel® Core™ i5-14400F [до 4.7GHz, 10 ядер]</p>
+                            <p>Видеокарта: Palit GeForce RTX 4060 Dual [8GB, 3072 CUDA]</p>
+                            <p>Материнская плата: MSI B760 GAMING PLUS [DDR5, Wi-Fi]</p>
+                            <p>Оперативная память: 32GB TEAMGROUP T-Force Delta RGB Black [DDR5, 5600MHz, 2x16GB]</p>
+                            <p>SSD накопитель: 1TB ADATA LEGEND 800 [3500MB/s, Gen4]</p>
+                            <p class="price">Цена: 152,000 руб.</p>
+                            <button onclick="addToCart('Игровой компьютер Fury', 152000)">Добавить в корзину</button>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="photo/hyperpc-champion-upd-black.jpg" alt="Компьютер 9">
+                        <div class="product-details">
+                            <h3>Игровой компьютер Champion</h3>
+                            <p>Процессор: Intel® Core™ i7-14700F [до 5.4GHz, 20 ядер]</p>
+                            <p>Видеокарта: Palit GeForce RTX 4060 Ti Dual [8GB, 4352 CUDA]</p>
+                            <p>Материнская плата: MSI B760 GAMING PLUS [DDR5, Wi-Fi]</p>
+                            <p>Оперативная память: 32GB TEAMGROUP T-Force Delta RGB Black [DDR5, 5600MHz, 2x16GB]</p>
+                            <p>SSD накопитель: 1TB ADATA LEGEND 800 [3500MB/s, Gen4]</p>
+                            <p class="price">Цена: 186,000 руб.</p>
+                            <button onclick="addToCart('Игровой компьютер Champion', 186000)">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Интернет-магазин компьютеров. Все права защищены.</p>
+        </footer>
+    </div>
+    <script>
+        function addToCart(name, price) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ name, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${name} добавлен в корзину!`);
+        }
+    </script>
+</body>
+</html>
